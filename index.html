@@ -4,47 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mi</title>
+    <link href="esttilo.css" rel="stylesheet">
+    <script>
+        function validaFormulario(){
+            let nombre=document.getElementById("nombre").value;
+            if(nombre == ""){
+                alert("Error: Complete la casilla!");
+                return false;
+            }
+        
+        let email=document.getElementById("email").value;
+            if(email == ""){
+                alert("Error: Complete la casilla!");
+                return false;
+            }
+
+        let mensaje=document.getElementById("mensaje").value;
+            if(mensaje == ""){
+                alert("Error: Complete la casilla!");
+                return false;
+            }
+
+            return true;
+
+            
+        }
+        
+        
+    
+    </script>
+ 
 </head>
 <body>
-    <h1>Origen</h1>
+    <h1>ORIGEN</h1>
     <hr>
-    <p>Un humano nacido en Santa Marta en el año de 1996, desarrollandose su crecimiento en el barrio de Gaira junto a toda su familia. Ha vivido en un total de 8 casa con diferentes personas pero rodeado siempre de familiares con sus altos y bajos como cualquier persona promedio en el mundo.</p>
+    <p>Un humano nacido en Santa Marta en el año de <strong> 1996</strong>, desarrollandose su crecimiento en el barrio de Gaira junto a toda su familia. Ha vivido en un total de 8 casa con diferentes personas pero rodeado siempre de familiares con sus altos y bajos como cualquier persona promedio en el mundo.</p>
     <br>
+    <nav>
+        <h2>Tabla de Contenido</h2>
+        <ul>
+            <li><a href="#Familia">Familia cercana</a></li>
+            <li><a href="#Amigos">Amigos</a></li>
+            <li><a href="#Mipersona">Mi persona</a></li>
+            <li><a href="#Pasatiempos">Pasatiempos</a></li>
+            <li><a href="#Tareas">Tareas pendientes</a></li>
+            <li><a href="#semana">Horario de la semana</a></li>
+            <li><a href="#formulario">Formulario de contacto</a></li>
+        </ul>
+    </nav>
+    <br>
+    <section id="Familia">
     <h2>Familia cercana</h2>
     <hr>
     <p>Criado por ambos padres, y conviviendo con una hermana 2 años menor que él, viviendo 8 años en esta convivencia; despues de varias discusiones ambos padres decidieron separarse, el padre se mudo solo pero cerca para seguir conviviendo con sus hijos, mientras la madre se llevo a los hijos con su madre a su hogar.</p>
+    </section>
+    <section id="Amigos">
     <h2>Amigos</h2>
     <hr>
     <p>Con un balon para facilitar el buen trato con sus semejantes, remarcando solo unos pocos que hasta ahora lo siguen acompañando; viviendo salidas, decepciones, peleas y la felecidad que aun siguen juntos y manteniendo viva la primera impresion e impresionandose con el crecimiento de su grupo para ser los mejores; con la frase "ser mejor que ayer", tratamos de mejorar y estr orgullosos de nosotros mismos.</p>
+    </section>
     <br>
+    <section id="Mipersona">
     <h2>Mi persona</h2>
     <hr>
-    <img src="WC.jpg">
+    <img src="WC.jpg" class="imagen" alt="Imagen de Winston">
+    </section>
+    <h4>Sigueme en instagram</h4>
     <br>
-    <a href="https://www.instagram.com/wkcervantes/profilecard/?igsh=OHA4cmc3OWVvaHZz">Instagram</a>
+    <a href="https://www.instagram.com/wkcervantes/profilecard/?igsh=OHA4cmc3OWVvaHZz"target="_blank"><img src="ins.png" alt="Instagram"style="width: 24px; height: 24px;" > </a>
     <br>
+    <section id="Pasatiempos">
     <h2>Pasatiempos</h2>
     <hr>
-    <p>Hay diversos gustos que aborda, pero los pricipales son: </p>
-    <ul>
+    <p>Los pasatiempos son actividades que realizamos en nuestro tiempo libre para disfrutar, relajarnos y desconectar de las responsabilidades diarias. Pueden ser creativos, deportivos, intelectuales o simplemente recreativos, y suelen reflejar nuestras preferencias e intereses personales. Hay diversos gustos que aborda, pero los pricipales son: </p>
+    <ul class="container">
         <li>Dibujar</li>
         <li>Ejercicio, calistenia</li>
         <li>Jugar pokemon</li>
     </ul>
+    </section>
     <br>
+    <section id="Tareas">
     <h2>Tareas pendientes</h2>
     <hr>
-    <p>Obligaciones autoimpuestas</p>
-    <ol>
-        <li>Hacer oficio</li>
-        <li>Practicar ingles</li>
+    <p>Las obligaciones son responsabilidades y tareas que debemos cumplir en nuestra vida diaria para mantener el orden, cumplir con compromisos y garantizar nuestro bienestar y el de quienes nos rodean. Las obligaciones de Winston:</p>
+    <ol class="intro">
+        <li>Pintar la casa</li>
+        <li>Completar las tareas</li>
         <li>Cumplir las carreras</li>
     </ol>
+    </section>
     <br>
+    <section id="semana">
     <h2>Horario de la semana</h2>
     <hr>
     <br>
-    <table border="4">
+    <table border="8" class="cuadro">
         <thead>
             <tr>
                 <th>Lunes</th>
@@ -58,35 +113,39 @@
         </thead>
         <tbody>
             <tr>
-                <td>Practicar ingles</td>
-                <td>Hacer oficio, cumplir carreras</td>
-                <td>Practicar ingles, umplir carreras</td>
-                <td>Hacer oficio</td>
+                <td>Pintar la casa</td>
+                <td>pintar la casa, cumplir carreras</td>
+                <td>Practicar ingles, cumplir carreras</td>
+                <td>Dibujar y ejercico</td>
                 <td>Practicar ingles, cumplir carreras</td>
                 <td>Practicar ingles, cumplir carreras</td>
-                <td>Hacer oficio, cumplir carreras</td>
+                <td>Pintar, cumplir carreras</td>
             </tr>
         </tbody>
     </table>
+    </section>
     <br>
     <hr>
-    <div>
-        <form>
-            <h2>Formulario de Contacto</h2>
 
-            <label>*Nombre:</label>
-            <input type="text" name="nombre" required=""> <br><br>
+    <section id="formulario">
+    <h2>Formulario de Contacto</h2>
+    
+    <form class="rectangulo" onsubmit="return validaFormulario()">
+            
+        <label><strong>Nombre:</strong></label>
+        <input type="text" name="nombre" id="nombre"> <br><br>
 
-            <label>*Mensaje</label>
-            <textarea required=""></textarea><br><br>
+        <label><strong>Correo Electronico:</strong></label>
+        <input type="email" name="email" id="email"> <br><br>
 
-            <label>*Correo Electronico:</label>
-            <input type="email" name="email" required=""> <br><br>
+        <label><strong>Mensaje:</strong></label>
+        <textarea id="mensaje"></textarea><br><br>
 
-            <input type="submit" value="enviar">
-        </form>
-    </div>
-
+        <input type="submit" value="enviar">
+    </form>
+    </section>
+    
+    
 
 
     
